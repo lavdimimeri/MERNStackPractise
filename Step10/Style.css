@@ -1,0 +1,28 @@
+body {
+ background-color: aqua;
+ 
+}
+
+h1{
+    color: red;
+    text-align: center;
+    
+}
+
+.square {
+    
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+}
+
+#circle {
+    color: yellow;
+    font-size: 40px;
+}
+
+#testingid{
+    
+    color: darkred;
+}
