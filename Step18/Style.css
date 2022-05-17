@@ -1,0 +1,64 @@
+
+
+body {
+ /*   background-image: url(zebra.jfif);*/
+ /*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+    background-color: #444;  
+    text-align: center;
+    
+}
+
+
+
+
+h1  {
+    color: white;
+   line-height: 2rem;
+    font-family: 'Macondo';
+    
+}
+h2 {
+    color: white;
+    font-family: 'Smooch',serif,sans-serif;
+    line-height: 2rem;
+    
+}
+h3  {
+    color: white;
+   font-family: 'Macondo';
+    line-height: 2rem;
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    word-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.formatting{
+    font-size: 25px;
+    line-height: 2em;
+    color: white;
+}
+
+
+.borderImg {
+    border-right: 10px solid aqua;
+    
+}
+
+ul li {
+    
+   color:red;
+    font-size: 20px;
+}
+  
+ul > li {
+    color: yellow;
+}
