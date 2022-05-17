@@ -1,0 +1,42 @@
+body {
+    background-image: url(zebra.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#foo{
+    color: red;
+}
+{id="foo"}{
+    color: blue;
+}
+
+.container h1{
+    color: red;
+}
+div h1{
+    color: aqua;
+}
+
+
+
+h1,h2,h3  {
+    color: white;
+    text-shadow: 2px 2px  5px black;
+}
+
+
+.borderImg {
+    border-right: 10px solid aqua;
+    
+}
+
+ul li {
+    
+   color:red;
+    font-size: 20px;
+}
+  
+ul > li {
+    color: yellow;
+}
