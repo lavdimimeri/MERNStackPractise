@@ -1,0 +1,41 @@
+<!doctype html>
+<html land="en">
+<head>
+<title>First CSS webpage</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+    
+    <body>
+     <nav>
+        <ul class="topnav" id="dropdownClick">
+         <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a>
+            <li class="topnav-right"><a href="#SignUp">Sign Up</a></li>
+            <li class="topnav-right"><a href="#SignIn">Sign In</a></li>
+            
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">	
+&#9776;</a></li>
+         </ul>
+        
+    </nav>
+    
+    <script>
+        function dropdownMenu(){
+            var x = document.getElementById("dropdownClick");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+                /*Change topnav top topnav.responsive*/
+            }else{
+                x.className="topnav";
+            }
+            
+        }
+        
+        </script>    
+    
+    
+    </body>
+    
+ </html>
