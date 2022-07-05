@@ -1,0 +1,45 @@
+//variables
+$brand-main:   #6600CC
+$brand-sub:   #CC66FF
+$brand-dark:   #333
+$brand-light:   #E6F2FF
+
+
+
+
+
+//mixins
+=shaping($height, $width, $rad, $bg, $color)
+    height:            $height
+    width:             $width
+    border-radius:     $rad
+    background-color:  $bg
+    color:             $color  
+
+
+
+
+//Styles
+
+body
+    background-color: $brand-light
+    
+h1
+    text-align: center
+    padding: 20px
+    
+    
+section
+    background: $brand-sub
+    color: $brand-dark
+    width: 700px
+    margin: auto
+    padding: 20px
+    border-radius: 7%
+    position: relative
+    z-index: -2
+    
+    
+.thumb1  
+    +shaping(120px, 120px, 10%, $brand-dark, $brand-light)
+    margin: 0 435px -90px

@@ -1,0 +1,26 @@
+body {
+  background-color: #E6F2FF; }
+
+h1 {
+  text-align: center;
+  padding: 20px; }
+
+section {
+  background: #CC66FF;
+  color: #333;
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 7%;
+  position: relative;
+  z-index: -2; }
+
+.thumb1 {
+  height: 120px;
+  width: 120px;
+  border-radius: 10%;
+  background-color: #333;
+  color: #E6F2FF;
+  margin: 0 435px -90px; }
+
+/*# sourceMappingURL=main.css.map */
