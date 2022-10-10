@@ -1,0 +1,30 @@
+
+<html lang="en">
+<head>
+
+<title>Dog app</title>
+</head>
+<body>
+
+<button onclick="fetchRandomDog()">Get dog</button>
+<img src="" alt="random dog picture">
+
+<script>
+
+async function fetchRandomDog(){
+    const response = await fetch("https://dog.ceo/api/breeds/image/random");
+    const data = await response.json();
+    const url = data.message;
+
+  const imageElement = document.querySelector("img");
+  imageElement.src=url;
+}
+
+</script>
+</body>
+
+
+
+
+
+</html>
