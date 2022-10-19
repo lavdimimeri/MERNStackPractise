@@ -3,6 +3,7 @@ import BlogList from "./BlogList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState(null)
+  const [isPending, setIsPending] = useState(true);
 
   useEffect(() => {
     fetch('http://localhost:8000/blogs')
@@ -12,8 +13,26 @@ const Home = () => {
       .then(data => {
          console.log(data);
         setBlogs(data);
-      })
+        setIsPending(false);
+      });
   }, [])
+
+    //------ SETING TIMOUT IN ORDER TO NOTICE THE LOADING DIV
+  /*useEffect(() => {
+    setTimeout(() => {
+     fetch('http://localhost:8000/blogs')
+     .then(res => {
+       return res.json();
+     })
+     .then(data => {
+        console.log(data);
+       setBlogs(data);
+       setIsPending(false);
+     });
+    },1000)
+   }, [])
+  */
+     // ----FETCHING DATA USING ASYNC/AWAIT (MODERN WAY OF ) 
    /* useEffect(() => {
       fetchData();
       
@@ -33,6 +52,7 @@ const Home = () => {
 */
   return (
     <div className="home">
+      {isPending && <div>Loading....</div>}
       {blogs && <BlogList blogs={blogs} title={'All blogs'}/>}
     </div>
   );
