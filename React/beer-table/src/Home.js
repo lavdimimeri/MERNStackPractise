@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
+import useFetch from "./useFetch";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState(null)
+ const {data:blogs, isPending, error} = useFetch('http://localhost:8000/blogs');
+
+
+ /* const [blogs, setBlogs] = useState(null)
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
-
+*/
  /* useEffect(() => {
     fetch('http://localhost:8000/blogs')
       .then(res => {
@@ -19,7 +23,7 @@ const Home = () => {
   }, [])
 */
     //------ SETING TIMOUT IN ORDER TO NOTICE THE LOADING DIV
-  useEffect(() => {
+ /* useEffect(() => {
     setTimeout(() => {
      fetch('http://localhost:8000/blogs')
      .then(res => {
@@ -40,7 +44,7 @@ const Home = () => {
      })
     },1000)
    }, [])
-  
+  */
      // ----FETCHING DATA USING ASYNC/AWAIT (MODERN WAY OF ) 
    /* useEffect(() => {
       fetchData();
